@@ -64,6 +64,7 @@ class Database {
         let smt = await this.db.prepare('SELECT username, balance FROM users');
         let c = await smt.get();
         console.log(c);
+        console.log('hello');
     }
 }
 
