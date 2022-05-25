@@ -1,0 +1,114 @@
+.mobileSocialContainer {
+    display: none;
+}
+
+.ttSocialContainer p.thumbnail-eyebrow {
+    border-bottom: 0 none !important;
+}
+
+.ttSocialContainer p.thumbnail-body {
+    font-size: 0.8rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.ttSocialLinks {
+    position: relative;
+    z-index: 9;
+    opacity: 1;
+}
+
+.ttSocialLinks a.ico,
+.mobileSocialContainer a.ico {
+    border: 1px solid #c8c8c8 !important;
+    margin: 0 0.5rem 0 0 !important;
+    padding: 0.45rem 0 0 0 !important;
+    display: inline-block !important;
+    position: static !important;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.ttSocialLinks a.ico span,
+.mobileSocialContainer a.ico span,
+.social-promo-social-button span {
+    display: block;
+    text-indent: -9999px;
+}
+
+.ttSocialLinks .icon-twitter,
+.mobileSocialContainer .icon-twitter {
+    color: #00aced !important;
+}
+
+.ttSocialLinks a.icon-twitter:hover,
+.mobileSocialContainer a.icon-twitter:hover {
+    background-color: #00aced !important;
+    color: #fff !important;
+}
+
+.ttSocialLinks .icon-linkedin,
+.mobileSocialContainer .icon-linkedin {
+    color: #0077b5 !important;
+}
+
+.ttSocialLinks a.icon-linkedin:hover,
+.mobileSocialContainer a.icon-linkedin:hover {
+    background-color: #0077b5 !important;
+    color: #fff !important;
+}
+
+.ttSocialLinks .icon-facebook,
+.mobileSocialContainer .icon-facebook {
+    color: #3b5998 !important;
+}
+
+.ttSocialLinks a.icon-facebook:hover,
+.mobileSocialContainer a.icon-facebook:hover {
+    background-color: #3b5998 !important;
+    color: #fff !important;
+}
+
+.ttSocialLinks .icon-play,
+.mobileSocialContainer .icon-play {
+    color: #d34134 !important;
+}
+
+.ttSocialLinks a.icon-play:hover,
+.mobileSocialContainer a.icon-play:hover {
+    background-color: #d34134 !important;
+    color: #fff !important;
+}
+
+.ttSocialLinks .icon-instagram,
+.mobileSocialContainer .icon-instagram {
+    color: #4c4c4c !important;
+}
+
+.ttSocialLinks a.icon-instagram:hover,
+.mobileSocialContainer a.icon-instagram:hover {
+    background-color: #4c4c4c !important;
+    color: #fff !important;
+}
+
+@media (max-width: 999px) {
+    .scroll-wrap {
+        position: relative;
+    }
+
+    .mobileSocialContainer {
+        display: block;
+        padding: 8rem 2rem 2rem 2rem;
+        clear: both;
+        opacity: 1;
+    }
+
+    .mobileSocialContainer a.ico {
+        padding: 0.35rem 0 0 0 !important;
+    }
+
+    .mobileSocialContainer .heading.eyebrow {
+        margin-bottom: 0.7rem !important;
+    }
+}
