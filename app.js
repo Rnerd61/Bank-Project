@@ -1,5 +1,6 @@
 const express       = require('express');
 const cookieParser  = require('cookie-parser')
+const session       = require('express-session')
 const app           = express();
 const bodyParser    = require('body-parser');
 const routes        = require('./routes');
@@ -16,6 +17,14 @@ app.use(bodyParser.urlencoded({
 app.set('views', './views');
 app.use('/static', express.static(path.resolve('static')));
 app.use(cookieParser());
+app.use(
+    session({
+        secret : 'ITS_A_SECRET',
+        resave : false,
+        saveUninitialized : false
+    })
+)
+
 app.use(routes(db));
 
 app.all('*', (req, res) => {

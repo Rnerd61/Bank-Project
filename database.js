@@ -20,7 +20,6 @@ class Database {
                 id         INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
                 username   VARCHAR(255) NOT NULL UNIQUE,
                 password   VARCHAR(255) NOT NULL,
-                cookies    VARCHAR(255),
                 balance    INTEGER
             );
         `);
@@ -29,10 +28,8 @@ class Database {
     async register(user, pass) {
         return new Promise(async (resolve, reject) => {
             try {
-                let cookie = user+'_'+pass+'_'+'secret';
-                let query = `INSERT INTO users (username, password, cookies, balance) VALUES ('${user}', '${pass}', 'hello', 0)`;
-                await this.db.run(query);
-                resolve(cookie);
+                let query = `INSERT INTO users (username, password, balance) VALUES ('${user}', '${pass}', 0)`;
+                resolve(await this.db.run(query));
             } catch(e) {
                 reject(e);
             }
@@ -42,17 +39,13 @@ class Database {
     async login(user, pass) {
         return new Promise(async (resolve, reject) => {
             try {
-
                 let smt = await this.db.prepare('SELECT username FROM users WHERE username = ? and password = ?');
                 let row = await smt.get(user, pass);
 
                 if(!row){
-                    resolve(NaN);
+                    reject();
                 }else {
-                    let cookie = user+'_'+pass+'_secret'
-                    let query = `UPDATE users SET cookies='${cookie}' WHERE username='${user}'`;
-                    await this.db.run(query);
-                    resolve(cookie);
+                    resolve();
                 }
             } catch(e) {
                 reject(e);
