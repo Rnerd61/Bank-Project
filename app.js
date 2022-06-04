@@ -9,6 +9,7 @@ const Database      = require('./database');
 
 const db = new Database('weather-app.db');
 
+app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
