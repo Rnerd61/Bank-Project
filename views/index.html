@@ -11,12 +11,20 @@
 
     <title>Bank project</title>
 
-    <meta name="description" content="This is a self project related to blockchain" />
+    <meta name="description"
+        content="This is a self project related to blockchain" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="icon" type="image/png" href="../static/images/favicon.ico" />        <!--Favicon Icon-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <script type="text/javascript" src="../static/js/nav-bar.ejs"></script>
-    <link rel="stylesheet" href="../static/css/page-structure.css" type="text/css" />
+
+    <script type="text/javascript"
+        src="../static/js/nav-bar.ejs"></script>
+
+    <link rel="stylesheet"
+        href="../static/css/page-structure.css"
+        type="text/css" />
 
     <script>
         var MSCOM = MSCOM || {};
@@ -177,6 +185,7 @@
                             transform: translate3d(0px, -109px, 0px);
                             transition: all 0.5s ease 0s;
                           ">
+                          <!--22/03/2002-->
                                                 <header class="msdotcomr4-header">
                                                     <div class="r4-header-container">
                                                         <section class="r4-top-nav">
@@ -243,7 +252,7 @@
                                                                                                 aria-label="Client Login Links">
                                                                                                 <li
                                                                                                     class="cmp-navigation__item cmp-navigation__item--level-1">
-                                                                                                    <a href="login.html" data-analytics-link="Utility Nav | Client Login | Morgan Stanley Online"
+                                                                                                    <a href="/login" data-analytics-link="Utility Nav | Client Login | Morgan Stanley Online"
                                                                                                         class="cmp-navigation__item-link"
                                                                                                         data-id="second-level-1">Login
                                                                                                     </a>
@@ -252,7 +261,6 @@
                                                                                                 <li
                                                                                                     class="cmp-navigation__item cmp-navigation__item--level-1">
                                                                                                     <a data-analytics-link="Utility Nav | Client Login | StockPlan Connect"
-                                                                                                    href="register.html"
                                                                                                         class="cmp-navigation__item-link"
                                                                                                         data-id="second-level-2">Register
                                                                                                     </a>
@@ -2682,6 +2690,82 @@
                                             </button>
                                         </div>
                                     </div>
+                                    <div class="congrats-wrapper feedback-questions"
+                                        data-analytics-link="Newsletter Signup | Success">
+                                        <p class="thankYouMsg">Thank You for Subscribing!</p>
+                                        <p class="line-separator"></p>
+                                        <p class="improve-title">
+                                            Would you like to help us improve our coverage of topics
+                                            that might interest you? Tell us about yourself.
+                                        </p>
+                                        <div class="q-left">
+                                            <div class="q-left-heading">
+                                                What kind of ideas interest you most?
+                                            </div>
+                                            <input aria-label="Technology" type="checkbox" name="IdeasInterests"
+                                                value="Technology"
+                                                data-analytics-button="Newsletter Signup | Survey Answers" />
+                                            Technology<br />
+                                            <input aria-label="Economic Trends" type="checkbox" name="IdeasInterests"
+                                                value="Economic Trends"
+                                                data-analytics-button="Newsletter Signup | Survey Answers" />
+                                            Economic Trends<br />
+                                            <input aria-label="Industry Trends" type="checkbox" name="IdeasInterests"
+                                                value="Industry Trends"
+                                                data-analytics-button="Newsletter Signup | Survey Answers" />
+                                            Industry Trends<br />
+                                            <input aria-label="Emerging Markets" type="checkbox" name="IdeasInterests"
+                                                value="Emerging Markets"
+                                                data-analytics-button="Newsletter Signup | Survey Answers" />
+                                            Emerging Markets<br />
+                                            <input aria-label="Investment Strategies" type="checkbox"
+                                                name="IdeasInterests" value="Investment Strategies"
+                                                data-analytics-button="Newsletter Signup | Survey Answers" />
+                                            Investment Strategies<br /><br />
+                                        </div>
+                                        <div class="q-right">
+                                            <div class="q-right-heading">
+                                                How would you describe yourself?
+                                            </div>
+                                            <input aria-label="Investor" type="checkbox" name="DescribeYourself"
+                                                value="Investor"
+                                                data-analytics-button="Newsletter Signup | Survey Answers" />
+                                            Investor<br />
+                                            <input aria-label="Financial Professional" type="checkbox"
+                                                name="DescribeYourself" value="Financial Professional"
+                                                data-analytics-button="Newsletter Signup | Survey Answers" />
+                                            Financial Professional<br />
+                                            <input aria-label="Journalist" type="checkbox" name="DescribeYourself"
+                                                value="Journalist"
+                                                data-analytics-button="Newsletter Signup | Survey Answers" />
+                                            Journalist<br />
+                                            <input aria-label="Student" type="checkbox" name="DescribeYourself"
+                                                value="Student"
+                                                data-analytics-button="Newsletter Signup | Survey Answers" />
+                                            Student<br />
+                                            <input aria-label="Other" type="checkbox" name="DescribeYourself"
+                                                value="Other"
+                                                data-analytics-button="Newsletter Signup | Survey Answers" />
+                                            Other<br /><br />
+                                        </div>
+                                        <div style="clear: both"></div>
+                                        <p class="line-separator"></p>
+                                        <button type="button" class="btn-capsule btn-module-footer button-blue"
+                                            id="NewsletterSurveySubmit"
+                                            data-analytics-button="Newsletter Signup | Survey Submit">
+                                            Submit
+                                        </button>
+                                    </div>
+                                    <div class="congrats-wrapper thankyou-wrapper"
+                                        data-analytics-link="Newsletter Signup | Survey Success">
+                                        <div class="survey-msg-wrapper">
+                                            <div class="icon-survey" role="img" aria-label="icon-survey"></div>
+                                            <div class="thankYouSurveyMsg">
+                                                Thank You for Taking the Survey!
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -3110,6 +3194,66 @@
                                             <div class="footer aem-GridColumn aem-GridColumn--default--12">
                                                 <footer class="msdotcomr4-footer">
                                                     <div class="r4-footer">
+                                                        <section class="r4-footer__social">
+                                                            <nav class="social-links">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href=""
+                                                                            target="_blank"
+                                                                            data-analytics-link="Global Footer | Linkedin Follow"
+                                                                            aria-label="linkedin" rel="noopener"><span
+                                                                                class="footer-button__linkedin"
+                                                                                aria-hidden="true"></span><span
+                                                                                class="screen-reader-only">(opens in a
+                                                                                new tab)</span></a>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <a href=""
+                                                                            target="_blank"
+                                                                            data-analytics-link="Global Footer | Instagram Follow"
+                                                                            aria-label="instagram" rel="noopener"><span
+                                                                                class="footer-button__instagram"></span><span
+                                                                                class="screen-reader-only">(opens in a
+                                                                                new tab)</span></a>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <a href=""
+                                                                            target="_blank"
+                                                                            data-analytics-link="Global Footer | Twitter Follow"
+                                                                            aria-label="twitter" rel="noopener"><span
+                                                                                class="footer-button__twitter"
+                                                                                aria-hidden="true"></span><span
+                                                                                class="screen-reader-only">(opens in a
+                                                                                new tab)</span></a>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <a href=""
+                                                                            target="_blank"
+                                                                            data-analytics-link="Global Footer | Facebook Follow"
+                                                                            aria-label="facebook" rel="noopener"><span
+                                                                                class="footer-button__facebook"
+                                                                                aria-hidden="true"></span><span
+                                                                                class="screen-reader-only">(opens in a
+                                                                                new tab)</span></a>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <a href=""
+                                                                            target="_blank"
+                                                                            data-analytics-link="Global Footer | Youtube Follow"
+                                                                            aria-label="youtube" rel="noopener"><span
+                                                                                class="footer-button__youtube"
+                                                                                aria-hidden="true"></span><span
+                                                                                class="screen-reader-only">(opens in a
+                                                                                new tab)</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </section>
+
                                                         <div class="cmp-separator">
                                                             <hr class="cmp-separator__horizontal-rule" />
                                                         </div>
@@ -3225,11 +3369,108 @@
                                                         </div>
                                                         <section class="r4-footer__copyright">
                                                             <p class="copyright">
-                                                                <span>© 2022</span>&nbsp;Bank Project
+                                                                <span>© 2022</span>&nbsp;Morgan Stanley. All
+                                                                rights reserved.
                                                             </p>
                                                         </section>
                                                     </div>
                                                 </footer>
+                                                <!--BEGIN QUALTRICS SITE INTERCEPT-->
+                                                <script>
+                                                    var MS_QUALTRICS_ID = "3Cs6UXXsqTCIpiR";
+                                                    (function () {
+                                                        var g = function (e, h, f, g) {
+                                                            this.get = function (a) {
+                                                                for (
+                                                                    var a = a + "=",
+                                                                    c = document.cookie.split(";"),
+                                                                    b = 0,
+                                                                    e = c.length;
+                                                                    b < e;
+                                                                    b++
+                                                                ) {
+                                                                    for (var d = c[b]; " " == d.charAt(0);)
+                                                                        d = d.substring(1, d.length);
+                                                                    if (0 == d.indexOf(a))
+                                                                        return d.substring(a.length, d.length);
+                                                                }
+                                                                return null;
+                                                            };
+                                                            this.set = function (a, c) {
+                                                                var b = "",
+                                                                    b = new Date();
+                                                                b.setTime(b.getTime() + 6048e5);
+                                                                b = "; expires=" + b.toGMTString();
+                                                                document.cookie =
+                                                                    a + "=" + c + b + "; path=/; ";
+                                                            };
+                                                            this.check = function () {
+                                                                var a = this.get(f);
+                                                                if (a) a = a.split(":");
+                                                                else if (100 != e)
+                                                                    "v" == h &&
+                                                                        (e = Math.random() >= e / 100 ? 0 : 100),
+                                                                        (a = [h, e, 0]),
+                                                                        this.set(f, a.join(":"));
+                                                                else return !0;
+                                                                var c = a[1];
+                                                                if (100 == c) return !0;
+                                                                switch (a[0]) {
+                                                                    case "v":
+                                                                        return !1;
+                                                                    case "r":
+                                                                        return (
+                                                                            (c = a[2] % Math.floor(100 / c)),
+                                                                            a[2]++,
+                                                                            this.set(f, a.join(":")),
+                                                                            !c
+                                                                        );
+                                                                }
+                                                                return !0;
+                                                            };
+                                                            this.go = function () {
+                                                                if (this.check()) {
+                                                                    var a = document.createElement("script");
+                                                                    a.type = "text/javascript";
+                                                                    a.src = g + "&t=" + new Date().getTime();
+                                                                    document.body &&
+                                                                        document.body.appendChild(a);
+                                                                }
+                                                            };
+                                                            this.start = function () {
+                                                                var a = this;
+                                                                window.addEventListener
+                                                                    ? window.addEventListener(
+                                                                        "load",
+                                                                        function () {
+                                                                            a.go();
+                                                                        },
+                                                                        !1
+                                                                    )
+                                                                    : window.attachEvent &&
+                                                                    window.attachEvent("onload", function () {
+                                                                        a.go();
+                                                                    });
+                                                            };
+                                                        };
+                                                        try {
+                                                            new g(
+                                                                100,
+                                                                "r",
+                                                                "QSI_S_ZN_" + MS_QUALTRICS_ID,
+                                                                "//zn" +
+                                                                +MS_QUALTRICS_ID.toLowerCase() +
+                                                                "-morganstanleydigital.siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_" +
+                                                                MS_QUALTRICS_ID +
+                                                                "&Q_LOC=" +
+                                                                encodeURIComponent(window.location.href)
+                                                            ).start();
+                                                        } catch (i) { }
+                                                    })();
+                                                </script>
+                                                <div id="3Cs6UXXsqTCIpiR">
+                                                    <!--DO NOT REMOVE-CONTENTS PLACED HERE-->
+                                                </div>
                                                 <!--END SITE INTERCEPT-->
                                             </div>
                                         </div>
@@ -3245,6 +3486,378 @@
 
     <!-- end progress 9%-->
 
-    
+
+    <script>
+        //Careers S&G - Google Global Site Tag
+        (function () {
+            var a = document,
+                b = a.getElementsByTagName("head")[0],
+                c = a.createElement("script");
+            c.type = "text/javascript";
+            c.src = "https://www.googletagmanager.com/gtag/js?id=DC-11077252";
+            b.appendChild(c);
+        })();
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "DC-11077252");
+    </script>
+
+    <script>
+        (function () {
+            var a = document,
+                b = a.getElementsByTagName("head")[0],
+                c = a.createElement("script");
+            c.type = "text/javascript";
+            c.src = "https://www.googletagmanager.com/gtag/js?id=DC-11382434";
+            b.appendChild(c);
+        })();
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "DC-11382434");
+        gtag("config", "AW-827367460");
+        gtag("config", "AW-976716129");
+    </script>
+
+    <style type="text/css">
+        #bidtellectpixel {
+            width: 1px;
+            height: 1px;
+            border: 0px;
+            display: none;
+        }
+    </style>
+
+    <script>
+        //Careers S&G - Google Event Tag
+        if (
+            document.location.href.indexOf(
+                "morganstanley.com/careers/students-graduates/opportunities/"
+            ) > -1
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/jobde0+standard",
+            });
+        }
+
+        if (document.location.href == "https://www.morganstanley.com/about-us") {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/about0+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/about-us/morgan-stanley-core-values"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/about00+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/about-us/diversity"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/about003+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/about-us/giving-back"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/about005+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/about-us/history"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/about001+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/about-us/leadership"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/about000+standard",
+            });
+        }
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/about-us/global-offices"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/about002+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/about-us/sustainability-at-morgan-stanley"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/about004+standard",
+            });
+        }
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/about-us/technology"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/about006+standard",
+            });
+        }
+
+        if (document.location.href == "https://www.morganstanley.com/ideas") {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/ourin0+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/ideas?filter=diversity-inclusion"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/ourin003+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/ideas?filter=market-trends"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/ourin000+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/ideas?filter=personal-finance"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/ourin00+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/ideas?filter=sustainability"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/ourin002+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/ideas?filter=technology-disruption"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/ourin001+standard",
+            });
+        }
+
+        if (
+            document.location.href == "https://www.morganstanley.com/what-we-do"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/whatw0+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/what-we-do/inclusive-innovation-and-opportunity"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/whatw006+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/what-we-do/investment-banking"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/whatw000+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/what-we-do/investment-management"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/whatw003+standard",
+            });
+        }
+
+        if (document.location.href == "https://www.morganstanley.com/atwork") {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/whatw004+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/what-we-do/research"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/whatw002+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/what-we-do/sales-and-trading"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/whatw001+standard",
+            });
+        }
+
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/what-we-do/institute-for-sustainable-investing"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/whatw005+standard",
+            });
+        }
+        if (
+            document.location.href ==
+            "https://www.morganstanley.com/what-we-do/wealth-management"
+        ) {
+            gtag("event", "conversion", {
+                allow_custom_scripts: true,
+                send_to: "DC-11077252/caree0/whatw00+standard",
+            });
+        }
+    </script>
+
+    <div id="_evh-button" class="evidon-consent-button" role="button" style="display: block">
+        <style>
+            @media print {
+
+                #_evh-ric,
+                #_evh-link {
+                    display: none !important;
+                }
+            }
+        </style>
+    </div>
+    <style type="text/css">
+        .QSIPopOver div,
+        .QSIPopOver dl,
+        .QSIPopOver dt,
+        .QSIPopOver dd,
+        .QSIPopOver ul,
+        .QSIPopOver ol,
+        .QSIPopOver li,
+        .QSIPopOver h1,
+        .QSIPopOver h2,
+        .QSIPopOver h3,
+        .QSIPopOver h4,
+        .QSIPopOver h5,
+        .QSIPopOver h6,
+        .QSIPopOver pre,
+        .QSIPopOver form,
+        .QSIPopOver fieldset,
+        .QSIPopOver textarea,
+        .QSIPopOver p,
+        .QSIPopOver blockquote,
+        .QSIPopOver th,
+        .QSIPopOver td {
+            margin: 0;
+            padding: 0;
+            color: black;
+            font-family: arial;
+            font-size: 12px;
+            line-height: normal;
+        }
+
+        .QSIPopOver ul {
+            margin: 12px 0;
+            padding-left: 40px;
+        }
+
+        .QSIPopOver ol,
+        .QSIPopOver ul {
+            margin: 12px 0;
+            padding-left: 40px;
+        }
+
+        .QSIPopOver ul li {
+            list-style-type: disc;
+        }
+
+        .QSIPopOver ol li {
+            list-style-type: decimal;
+        }
+
+        .QSIPopOver .scrollable {
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .QSIPopOver table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .QSIPopOver table td {
+            padding: 2px;
+        }
+
+        .QSIPopOver *,
+        .QSISlider *,
+        .QSIPopUnder *,
+        .QSIEmbeddedTarget * {
+            box-sizing: content-box;
+        }
+    </style>
 </body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
 </html>
